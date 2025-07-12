@@ -2,10 +2,20 @@
 
 set -e
 
-# Define working directory and Docker info
 WORKDIR="$(pwd)/datagram"
 CONTAINER_NAME="datagram-node"
 IMAGE_NAME="datagram-cli:latest"
+
+# Function: Check and install Docker if not present
+function check_docker() {
+  if ! command -v docker &> /dev/null; then
+    echo "[!] Docker is not installed. Installing Docker..."
+    curl -fsSL https://get.docker.com | bash
+    echo "[✔] Docker installed successfully."
+  else
+    echo "[✔] Docker is already installed."
+  fi
+}
 
 # Function: Build Docker image
 function build_image() {
@@ -24,10 +34,11 @@ EOF
   docker build -t $IMAGE_NAME "$WORKDIR"
 }
 
-# Function: Deploy node
+# Function: Deploy Datagram node
 function deploy_node() {
   read -p "Enter your Datagram key: " dkey
 
+  check_docker
   build_image
 
   docker rm -f $CONTAINER_NAME >/dev/null 2>&1 || true
