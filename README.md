@@ -5,6 +5,7 @@ wget -O Datagram.sh https://raw.githubusercontent.com/Onixs50/Datagram/main/Data
 ```
 
 🧭 Menu Functions 
+
 1️⃣ Deploy Node 👉 Prompts for the key (license key), then automatically builds the Docker container and runs the node.
 
 2️⃣ View Logs 👉 Displays real-time output logs from the CLI.
