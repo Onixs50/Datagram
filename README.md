@@ -14,3 +14,10 @@ wget -O Datagram.sh https://raw.githubusercontent.com/Onixs50/Datagram/main/Data
 
 4️⃣ Exit Script
 
+code is here 
+
+![photo_6026316334855474743_w](https://github.com/user-attachments/assets/fe537403-f7f5-4bc1-9a1e-9396c37c5664)
+
+Fill out this form.:
+
+https://docs.google.com/forms/d/e/1FAIpQLSevC3QjAx4xdNysKoRtCSR_5cAUtVBhoNu3XoCrQBIOYVQN8A/viewform
